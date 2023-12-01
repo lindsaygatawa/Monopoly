@@ -8,10 +8,9 @@ public class ChanceBox extends NewBox {
 
 
 
-    public ChanceBox(String name, int boxId) {
-        boxName = name;
-        this.boxId = boxId;
-        boxType = "chance";
+    public ChanceBox(String boxName, int boxId) {
+        super(boxName, boxId);
+        super.boxType = "chance";
 
     }
 }

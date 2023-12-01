@@ -23,6 +23,10 @@ public class ChanceClass {
         chanceCards.add(new ChanceCard("advance to go"));
         chanceCards.add(new ChanceCard("advance to go"));
         chanceCards.add(new ChanceCard("advance to go"));
+        chanceCards.add(new ChanceCard("advance to go"));
+        chanceCards.add(new ChanceCard("advance to go"));
+        chanceCards.add(new ChanceCard("advance to go"));
+        chanceCards.add(new ChanceCard("advance to go"));
 
 
 
