@@ -1,32 +1,25 @@
 package upei.project;
+import java.util.ArrayList;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
 
-    private int exampleVar = 0;
-
-    public void setExampleVar(int inVal)
-    {
-        exampleVar = 0;
-    }
-
-    public int getExampleVar()
-    {
-        return exampleVar;
-    }
 
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Strategy strategy1 = new Strategy(true,  true, false);
+        Strategy strategy2 = new Strategy(false, false,true);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Player player1 = new Player("Ayo",1, 1500, strategy1);
+        Player player2 = new Player("Ben",2, 1500, strategy2);
+
+        ArrayList<Player> players = new ArrayList<>();
+        players.add(player1);
+        players.add(player2);
+
+        Game game = new Game();
+    }
+
+    public static class Game {
     }
 }
