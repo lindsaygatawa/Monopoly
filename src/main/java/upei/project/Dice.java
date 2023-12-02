@@ -18,7 +18,7 @@ public class Dice implements DiceAPI {
         return dice;
     }
     //calculates and returns the sum of the 2 dice values
-    public int getTotal () {
+    public  int getTotal () {
         return (dice[0] + dice[1]);
     }
 

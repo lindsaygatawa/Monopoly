@@ -40,10 +40,53 @@ public class Game {
 
 
                     }
+                } else if (box.color == "brown") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if(canPurchase)
+                        box.setOwnedBy(player);
                 }
-                else if(box.color == "red") {
+                else if (box.color == "lightBlue") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if(canPurchase)
+                        box.setOwnedBy(player);
 
                 }
+                else if (box.color == "Red") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if(canPurchase)
+                        box.setOwnedBy(player);
+
+                }
+                else if (box.color == "Yellow") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if (canPurchase)
+                        box.setOwnedBy(player);
+
+                }
+                else if (box.color == "Purple") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if (canPurchase)
+                        box.setOwnedBy(player);
+                }
+                else if (box.color == "Green") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if (canPurchase)
+                        box.setOwnedBy(player);
+                }
+                else if (box.color == "Orange") {
+                    boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                    if (canPurchase)
+                        box.setOwnedBy(player);
+
+                }
+
 
 //                moveForward(player);
 
