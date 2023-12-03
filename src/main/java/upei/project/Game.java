@@ -167,7 +167,6 @@ public class Game {
 
                 }
                 if (currentB.boxType.equals("No actions")){
-
                 }
 
 
