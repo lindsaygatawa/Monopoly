@@ -8,13 +8,15 @@ import java.util.ArrayList;
 public class Game {
     ArrayList<Player> players = new ArrayList<>();
     //public ChanceClass chanceClass;
-
-
+    String winner;
     public Player currentPlayer = players.get(0);
 
     int numberOfPlayers = 2;
 
+    //default constructor
+    public Game(){
 
+    }
     public Game(ArrayList<Player> p_Players) {
             this.numberOfPlayers = p_Players.size();
 
@@ -88,7 +90,9 @@ public class Game {
                 }
 
 
-//                moveForward(player);
+
+//
+
 
             }
         }

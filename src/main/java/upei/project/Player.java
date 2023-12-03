@@ -2,8 +2,8 @@ package upei.project;
 
 import java.util.ArrayList;
 
-public class Player {
-    public  String playerName;
+public class Player extends Game {
+    public String playerName;
     public int playerId;
     public int currentMoney;
     // make it an arraylist
@@ -12,13 +12,14 @@ public class Player {
     public int currentPosition = 0;
     public Strategy strategy;
 
-    public  Player(String name, int id,int money, Strategy strategy) {
+
+    public Player(String name, int id, int money, Strategy strategy) {
 
         this.playerName = name;
         this.playerId = id;
-        this. currentMoney = money;
+        this.currentMoney = money;
 
-       this.strategy = strategy;
+        this.strategy = strategy;
     }
 
     public int getCurrentPosition() {
@@ -35,7 +36,7 @@ public class Player {
 
     public boolean makePurchase(int costOfPurchase) {
 
-        if(currentMoney >= costOfPurchase) {
+        if (currentMoney >= costOfPurchase) {
             currentMoney -= costOfPurchase;
             return true;
         }
@@ -53,13 +54,17 @@ public class Player {
 
     public boolean payRent(int rent) {
 
-        if(currentMoney >= rent) {
+        if (currentMoney >= rent) {
             currentMoney -= rent;
             return true;
         }
+        else {
+            if (currentMoney < rent) {
+                players.remove(currentPlayer);
 
-        return false;
+            }
+        }
+
+
     }
-
-
 }

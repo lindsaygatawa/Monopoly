@@ -18,6 +18,7 @@ public class Main {
         players.add(player2);
 
         Game game = new Game();
+
     }
 
     public static class Game {
