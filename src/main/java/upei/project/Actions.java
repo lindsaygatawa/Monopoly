@@ -63,8 +63,8 @@ public class Actions {
 
     }
     // Go to jail method
-    public void GoToJail(Player currentPlayer,){
-        currentPlayer.currentPosition =
+    public void GoToJail(Player currentPlayer,NoActions box){
+        currentPlayer.currentPosition = box.boxId;
 
     }
     public void advanceTo(Player currentPlayer, ChanceCard chanceCard){
@@ -72,16 +72,17 @@ public class Actions {
     }
     //roll dice method
 
-    public void rollDiceAndPrintTotal(){
+    public int rollDiceAndPrintTotal(){
         Dice dice = new Dice();
         dice.roll();
         total = dice.getTotal();
+        return total;
 
 
     }
 
     // updates player position and gives player $200 if they pass GO
-    public void moveFoward(Player player){
+    public int  moveForward(Player player){
         int steps = player.currentPosition + total;
         if(steps >= 40) {
             player.currentPosition = steps % 40;
@@ -89,7 +90,9 @@ public class Actions {
         }
         else{
             player.currentPosition = steps;
+
         }
+        return player.getCurrentPosition();
 
 
 
