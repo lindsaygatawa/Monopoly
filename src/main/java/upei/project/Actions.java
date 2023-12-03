@@ -63,12 +63,12 @@ public class Actions {
 
     }
     // Go to jail method
-    public void GoToJail(Player currentPlayer){
+    public void GoToJail(Player currentPlayer,){
         currentPlayer.currentPosition =
 
     }
-    public void advanceTo(Player currentPlayer){
-        currentPlayer.currentPosition =
+    public void advanceTo(Player currentPlayer, ChanceCard chanceCard){
+        currentPlayer.currentPosition = chanceCard.boxId;
     }
     //roll dice method
 
