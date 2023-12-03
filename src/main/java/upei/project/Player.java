@@ -9,7 +9,7 @@ public class Player extends Game {
     // make it an arraylist
     ArrayList<String> propertiesOwned = new ArrayList<>();
     //ArrayList<String> mortgageProperties= new ArrayList<>();
-    public int currentPosition = 0;
+    public int currentPosition = 1;
     public Strategy strategy;
 
 
