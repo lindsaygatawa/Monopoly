@@ -32,62 +32,62 @@ public class Game {
 
                 LandBox box = new LandBox("", 1, 2, 0, 300,"blue");
 
-                if(box.color == "blue") {
-                    if(player.strategy.shouldPurchaseBlueLand == true) {
 
+                   if(box.color == "blue"){
+                        if (player.strategy.shouldPurchaseBlueLand == true) {
+
+                            boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                            if (canPurchase)
+                                box.setOwnedBy(player);
+
+
+                        }
+                    } else if (box.color == "brown") {
                         boolean canPurchase = player.makePurchase(box.boxPrice);
 
-                        if(canPurchase)
+                        if (canPurchase)
+                            box.setOwnedBy(player);
+                    } else if (box.color == "lightBlue") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
                             box.setOwnedBy(player);
 
+                    } else if (box.color == "Red") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
+                            box.setOwnedBy(player);
+
+                    } else if (box.color == "Yellow") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
+                            box.setOwnedBy(player);
+
+                    } else if (box.color == "Purple") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
+                            box.setOwnedBy(player);
+                    } else if (box.color == "Green") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
+                            box.setOwnedBy(player);
+                    } else if (box.color == "Orange") {
+                        boolean canPurchase = player.makePurchase(box.boxPrice);
+
+                        if (canPurchase)
+                            box.setOwnedBy(player);
 
                     }
-                } else if (box.color == "brown") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
 
-                    if(canPurchase)
-                        box.setOwnedBy(player);
-                }
-                else if (box.color == "lightBlue") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
+                   else if ()
 
-                    if(canPurchase)
-                        box.setOwnedBy(player);
 
-                }
-                else if (box.color == "Red") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
 
-                    if(canPurchase)
-                        box.setOwnedBy(player);
-
-                }
-                else if (box.color == "Yellow") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
-
-                    if (canPurchase)
-                        box.setOwnedBy(player);
-
-                }
-                else if (box.color == "Purple") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
-
-                    if (canPurchase)
-                        box.setOwnedBy(player);
-                }
-                else if (box.color == "Green") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
-
-                    if (canPurchase)
-                        box.setOwnedBy(player);
-                }
-                else if (box.color == "Orange") {
-                    boolean canPurchase = player.makePurchase(box.boxPrice);
-
-                    if (canPurchase)
-                        box.setOwnedBy(player);
-
-                }
 
 
 

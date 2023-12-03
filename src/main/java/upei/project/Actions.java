@@ -44,7 +44,7 @@ public class Actions {
         newBoxes[22] = new ChanceBox("Chance",23);
         newBoxes[23] = new LandBox("Indiana ave",24,0,140,"Red");
         newBoxes[24] = new LandBox("Illinois ave",25,0,140,"Red");
-        newBoxes[25] = new Utility("B & O Railroad",26,0,140);
+        newBoxes[25] = new Utility("Railroad",26,0,140);
         newBoxes[26] = new LandBox("Atlantic ave",27,0,140,"Yellow");
         newBoxes[27] = new LandBox("Ventnor ave",28,0,140,"Yellow");
         newBoxes[28] = new Utility("Water work",29,0,140);
@@ -54,7 +54,7 @@ public class Actions {
         newBoxes[32] = new LandBox("North Carolina ave",33,0,140,"Green");
         newBoxes[33] = new CummunityBox("Community chest",34);
         newBoxes[34] = new LandBox("Pennsylvania ave",35,0,140,"Green");
-        newBoxes[35] = new Utility("Short line Railroad",36,0,140);
+        newBoxes[35] = new Utility("Railroad",36,0,140);
         newBoxes[36] = new ChanceBox("Chance",37);
         newBoxes[37] = new LandBox("Park place",38,0,140,"Dark Blue");
         newBoxes[38] = new NoActions("Luxury tax",39);
@@ -67,7 +67,7 @@ public class Actions {
         currentPlayer.currentPosition =
 
     }
-    public void advanceToGo(Player currentPlayer){
+    public void advanceTo(Player currentPlayer){
         currentPlayer.currentPosition =
     }
     //roll dice method
