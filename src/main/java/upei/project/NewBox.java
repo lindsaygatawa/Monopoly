@@ -5,9 +5,25 @@ abstract class NewBox {
     int boxId;
     String boxType;
 
+    Player ownedBy;
+
+    public NewBox(Player ownedBy, String boxName, int boxId){
+        this.ownedBy = ownedBy;
+        this.boxName = boxName;
+        this.boxId = boxId;
+    }
+
     public NewBox(String boxName, int boxId) {
         this.boxName = boxName;
         this.boxId = boxId;
 
+    }
+    public Player getOwnedBy() {
+
+        return ownedBy;
+    }
+
+    public void setOwnedBy(Player ownedBy) {
+        this.ownedBy = ownedBy;
     }
 }

@@ -4,7 +4,7 @@ import upei.project.NewBox;
 
 public class LandBox extends NewBox {
 
-    public Player ownedBy;
+
     public  String color;
     public int boxPrice;
 
@@ -16,18 +16,12 @@ public class LandBox extends NewBox {
 
     public Property property;
 
-    public Player getOwnedBy() {
-        return ownedBy;
-    }
-
-    public void setOwnedBy(Player ownedBy) {
-        this.ownedBy = ownedBy;
-    }
 
 
 
-    public LandBox(String boxName, int boxId, int l_boxPrice, int l_rent, String l_color) {
-        super(boxName, boxId);
+
+    public LandBox(String boxName, int boxId,Player ownedBy,int l_boxPrice, int l_rent, String l_color) {
+        super(boxName, boxId, ownedBy);
         super.boxType = "land";
         boxPrice = l_boxPrice;
         rent = l_rent;
