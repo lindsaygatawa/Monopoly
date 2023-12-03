@@ -9,7 +9,6 @@ public class Strategy {
     public boolean shouldPurchaseYellowLand;
 
     public boolean shouldPurchaseLightBlueLand;
-
     public boolean shouldPurchaseGreenLand;
 
     public boolean shouldPurchasePinkLand;
