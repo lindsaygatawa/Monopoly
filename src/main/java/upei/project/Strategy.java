@@ -8,7 +8,7 @@ public class Strategy {
 
     public boolean shouldPurchaseYellowLand;
 
-    public boolean shouldPurchaselightBlueLand;
+    public boolean shouldPurchaseLightBlueLand;
 
     public boolean shouldPurchaseGreenLand;
 
@@ -20,11 +20,11 @@ public class Strategy {
 
     public boolean shouldPurchaseBrownLand;
 
-    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand, boolean shouldPurchaselightBlueLand, boolean shouldPurchaseGreenLand, boolean shouldPurchasePinkLand,boolean shouldPurchaseOrangeLand, boolean shouldPurchaseRedLand,boolean shouldPurchaseBrownLand) {
+    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand, boolean shouldPurchaseLightBlueLand, boolean shouldPurchaseGreenLand, boolean shouldPurchasePinkLand,boolean shouldPurchaseOrangeLand, boolean shouldPurchaseRedLand,boolean shouldPurchaseBrownLand) {
         this.shouldPurchaseBlueLand = shouldPurchaseBlueLand;
         this.shouldPurchaseRailway = shouldPurchaseRailway;
         this.shouldPurchaseYellowLand = shouldPurchaseYellowLand;
-        this.shouldPurchaselightBlueLand = shouldPurchaselightBlueLand;
+        this.shouldPurchaseLightBlueLand = shouldPurchaseLightBlueLand;
         this.shouldPurchasePinkLand = shouldPurchasePinkLand;
         this.shouldPurchaseGreenLand = shouldPurchaseGreenLand;
         this.shouldPurchaseOrangeLand = shouldPurchaseOrangeLand;
@@ -63,12 +63,12 @@ public class Strategy {
         this.shouldPurchaseYellowLand = shouldPurchaseYellowLand;
     }
 
-    public boolean isShouldPurchaselightBlueLand() {
+    public boolean isShouldPurchaseLightBlueLand() {
 
-        return shouldPurchaselightBlueLand;
+        return shouldPurchaseLightBlueLand;
     }
-    public void setShouldPurchaselightBlueLand(boolean shouldPurchaselightBlueLand) {
-        this.shouldPurchaselightBlueLand = shouldPurchaselightBlueLand;
+    public void setShouldPurchaseLightBlueLand(boolean shouldPurchaselightBlueLand) {
+        this.shouldPurchaseLightBlueLand = shouldPurchaseLightBlueLand;
     }
     public boolean isShouldPurchaseBrownLand() {
 

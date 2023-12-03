@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Strategy strategy1 = new Strategy(true,  true, false);
-        Strategy strategy2 = new Strategy(false, false,true);
+        Strategy strategy1 = new Strategy(true,  true, false,false,false, true,true,true,false);
+        Strategy strategy2 = new Strategy(false, false,true,true,true,false,false,false,true);
 
         Player player1 = new Player("Ayo",1, 1500, strategy1);
         Player player2 = new Player("Ben",2, 1500, strategy2);
