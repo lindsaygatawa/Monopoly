@@ -7,7 +7,7 @@ abstract class NewBox {
 
     Player ownedBy;
 
-    public NewBox(Player ownedBy, String boxName, int boxId){
+    public NewBox( String boxName,int boxId, Player ownedBy){
         this.ownedBy = ownedBy;
         this.boxName = boxName;
         this.boxId = boxId;

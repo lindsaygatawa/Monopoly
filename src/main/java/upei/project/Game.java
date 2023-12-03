@@ -38,9 +38,9 @@ public class Game {
                 int currentP = player.currentPosition;
                 NewBox currentB = roll.newBoxes[currentP - 1];
                 if (currentB.boxType.equals("land") ){
-                    LandBox curre
-                    //LandBox owner = new LandBox;
-                    LandBox
+
+
+
 
                     Player owner = currentB.getOwnedBy()
                 }
