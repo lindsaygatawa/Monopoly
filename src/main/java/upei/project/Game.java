@@ -25,15 +25,33 @@ public class Game {
             act.createBoxes();
             ChanceClass chanceClass;
         }
-
+        //game starts
         public void startGame() {
             for (int playerIndex = 0;  playerIndex< players.size(); playerIndex++) {
                 Player player = players.get(playerIndex);
 
-                LandBox box = new LandBox("", 1, 2, 0, 300,"blue");
+                Actions roll = new Actions();
+                roll.rollDiceAndPrintTotal();
+
+                roll.moveForward(player);
+
+                int currentP = player.currentPosition;
+                NewBox currentB = roll.newBoxes[currentP - 1];
+                if (currentB.boxType.equals("land") ){
+                    LandBox curre
+                    //LandBox owner = new LandBox;
+                    LandBox
+
+                    Player owner = currentB.getOwnedBy()
+                }
 
 
-                   if(box.color == "blue"){
+
+
+
+
+
+                    if(box.color == "blue"){
                         if (player.strategy.shouldPurchaseBlueLand == true) {
 
                             boolean canPurchase = player.makePurchase(box.boxPrice);
@@ -84,7 +102,7 @@ public class Game {
 
                     }
 
-                   else if ()
+
 
 
 
