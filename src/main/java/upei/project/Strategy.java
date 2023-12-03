@@ -107,6 +107,7 @@ public class Strategy {
     public boolean isShouldPurchaseOrangeLand() {
 
         return shouldPurchaseOrangeLand;
+
     }
 
 
