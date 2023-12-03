@@ -8,10 +8,31 @@ public class Strategy {
 
     public boolean shouldPurchaseYellowLand;
 
-    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand) {
+    public boolean shouldPurchaselightBlueLand;
+
+    public boolean shouldPurchaseGreenLand;
+
+    public boolean shouldPurchasePinkLand;
+
+    public boolean shouldPurchaseRedLand;
+
+    public boolean shouldPurchaseOrangeLand;
+
+    public boolean shouldPurchaseBrownLand;
+
+    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand, boolean shouldPurchaselightBlueLand, boolean shouldPurchaseGreenLand, boolean shouldPurchasePinkLand,boolean shouldPurchaseOrangeLand, boolean shouldPurchaseRedLand,boolean shouldPurchaseBrownLand) {
         this.shouldPurchaseBlueLand = shouldPurchaseBlueLand;
         this.shouldPurchaseRailway = shouldPurchaseRailway;
         this.shouldPurchaseYellowLand = shouldPurchaseYellowLand;
+        this.shouldPurchaselightBlueLand = shouldPurchaselightBlueLand;
+        this.shouldPurchasePinkLand = shouldPurchasePinkLand;
+        this.shouldPurchaseGreenLand = shouldPurchaseGreenLand;
+        this.shouldPurchaseOrangeLand = shouldPurchaseOrangeLand;
+        this.shouldPurchaseRedLand = shouldPurchaseRedLand;
+        this.shouldPurchaseBrownLand = shouldPurchaseBrownLand;
+
+
+
     }
 
 
@@ -41,4 +62,52 @@ public class Strategy {
     public void setShouldPurchaseYellowLand(boolean shouldPurchaseYellowLand) {
         this.shouldPurchaseYellowLand = shouldPurchaseYellowLand;
     }
+
+    public boolean isShouldPurchaselightBlueLand() {
+
+        return shouldPurchaselightBlueLand;
+    }
+    public void setShouldPurchaselightBlueLand(boolean shouldPurchaselightBlueLand) {
+        this.shouldPurchaselightBlueLand = shouldPurchaselightBlueLand;
+    }
+    public boolean isShouldPurchaseBrownLand() {
+
+        return shouldPurchaseBrownLand;
+    }
+    public void setShouldPurchaseBrownLand(boolean shouldPurchaseBrownLand) {
+        this.shouldPurchaseBrownLand = shouldPurchaseBrownLand;
+    }
+
+    public boolean isShouldPurchasePinkLand() {
+
+        return shouldPurchasePinkLand;
+    }
+    public void setShouldPurchasePinkLand(boolean shouldPurchasePinkLand) {
+        this.shouldPurchasePinkLand = shouldPurchasePinkLand;
+    }
+    public boolean isShouldPurchaseRedLand() {
+
+        return shouldPurchaseRedLand;
+    }
+    public void setShouldPurchaseRedLand(boolean shouldPurchaseRedLand) {
+        this.shouldPurchaseRedLand = shouldPurchaseRedLand;
+    }
+    public void setShouldPurchaseGreenLand(boolean shouldPurchaseGreenLand) {
+        this.shouldPurchaseGreenLand = shouldPurchaseGreenLand;
+    }
+
+    public boolean isShouldPurchaseGreenLand() {
+
+        return shouldPurchaseGreenLand;
+    }
+    public void setShouldPurchaseOrangeLand(boolean shouldPurchaseOrangeLand) {
+        this.shouldPurchaseOrangeLand = shouldPurchaseOrangeLand;
+    }
+
+    public boolean isShouldPurchaseOrangeLand() {
+
+        return shouldPurchaseOrangeLand;
+    }
+
+
 }
