@@ -7,6 +7,7 @@ import upei.project .Dice;
 import upei.project.NewBox;
 
 
+
 public class MainTest {
 
     Actions actions = new Actions();
@@ -47,7 +48,6 @@ public class MainTest {
     }
     @Test
     public void testGetOwnedBy(){
-        boxx.getOwnedBy();
         assertEquals("should return"+ player1,boxx.getOwnedBy());
     }
     @Test
