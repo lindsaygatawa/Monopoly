@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Player extends Game {
     public String playerName;
     public int playerId;
+
     public int currentMoney;
     // make it an arraylist
     ArrayList<String> propertiesOwned = new ArrayList<>();
