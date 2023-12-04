@@ -159,7 +159,6 @@ public class Game {
                 }
                 if (currentB.boxType.equals("Community chest box")) {
 
-
                 }
                 if (currentB.boxType.equals("Chance")) {
 
