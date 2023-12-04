@@ -73,6 +73,10 @@ public class Actions {
     public void advanceTo(Player currentPlayer, ChanceCard chanceCard){
         currentPlayer.currentPosition = chanceCard.boxId;
     }
+
+    public void advanceTo(Player currentPlayer, CommunityChestCard chanceCard){
+        currentPlayer.currentPosition = chanceCard.boxID;
+    }
     //roll dice method
 
     public int rollDiceAndPrintTotal(){
