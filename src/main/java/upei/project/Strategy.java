@@ -19,7 +19,11 @@ public class Strategy {
 
     public boolean shouldPurchaseBrownLand;
 
-    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand, boolean shouldPurchaseLightBlueLand, boolean shouldPurchaseGreenLand, boolean shouldPurchasePinkLand,boolean shouldPurchaseOrangeLand, boolean shouldPurchaseRedLand,boolean shouldPurchaseBrownLand) {
+    public boolean shouldPurchaseElectricCompany;
+
+    public boolean shouldPurchaseWaterWorks;
+
+    public Strategy(boolean shouldPurchaseBlueLand, boolean shouldPurchaseRailway, boolean shouldPurchaseYellowLand, boolean shouldPurchaseLightBlueLand, boolean shouldPurchaseGreenLand, boolean shouldPurchasePinkLand,boolean shouldPurchaseOrangeLand, boolean shouldPurchaseRedLand,boolean shouldPurchaseBrownLand, boolean shouldPurchaseElectricCompany, boolean shouldPurchaseWaterWorks) {
         this.shouldPurchaseBlueLand = shouldPurchaseBlueLand;
         this.shouldPurchaseRailway = shouldPurchaseRailway;
         this.shouldPurchaseYellowLand = shouldPurchaseYellowLand;
@@ -29,6 +33,8 @@ public class Strategy {
         this.shouldPurchaseOrangeLand = shouldPurchaseOrangeLand;
         this.shouldPurchaseRedLand = shouldPurchaseRedLand;
         this.shouldPurchaseBrownLand = shouldPurchaseBrownLand;
+        this.shouldPurchaseElectricCompany = shouldPurchaseElectricCompany;
+        this.shouldPurchaseWaterWorks = shouldPurchaseWaterWorks;
 
 
 
