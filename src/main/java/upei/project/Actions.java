@@ -66,7 +66,7 @@ public class Actions {
 
     }
     // Go to jail method
-    public void GoToJail(Player currentPlayer,NoActions box){
+    public void GoToJail(Player currentPlayer,NewBox box){
         currentPlayer.currentPosition = box.boxId;
 
     }
