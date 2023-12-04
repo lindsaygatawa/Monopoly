@@ -26,7 +26,7 @@ public class Actions {
         newBoxes[1] = new LandBox("Mediterranean Avenue",2,null,50,60, "Brown");
         newBoxes[2] = new CummunityBox("Community Chest",3);
         newBoxes[3] = new LandBox("Baltic Avenue",4,null,0,90,"Brown");
-        newBoxes[4] = new NoActions("Income Tax",5);
+        newBoxes[4] = new NoActions("Income Tax",5, 0);
         newBoxes[5] = new Utility("Railroad",6,null,0,200);
         newBoxes[6] = new LandBox("Oriental Avenue",7,null,0,120,"Light Blue");
         newBoxes[7] = new ChanceBox("Chance",8);
@@ -60,7 +60,7 @@ public class Actions {
         newBoxes[35] = new Utility("Railroad",36,null,0,140);
         newBoxes[36] = new ChanceBox("Chance",37);
         newBoxes[37] = new LandBox("Park place",38,null,0,140,"Dark Blue");
-        newBoxes[38] = new NoActions("Luxury tax",39);
+        newBoxes[38] = new NoActions("Luxury tax",39,0);
         newBoxes[39] = new LandBox("Board walk",40,null,0,140,"Dark Blue");
 
 

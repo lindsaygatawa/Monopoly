@@ -20,17 +20,28 @@ abstract class NewBox {
         this.boxPrice = boxPrice;
     }
 
+    //used for LandBoxes
     public NewBox(String boxName, int boxId, Player ownedBy, int boxPrice) {
         this.boxName = boxName;
         this.boxPrice = boxPrice;
         this.ownedBy = ownedBy;
+        this.boxId = boxId;
     }
-
+    //used for general boxes
     public NewBox(String boxName, int boxId) {
         this.boxName = boxName;
         this.boxId = boxId;
 
     }
+
+
+    //used for Tax Utilities
+    public NewBox(String boxName,int boxId, int rent) {
+        this.boxName = boxName;
+        this.boxId = boxId;
+        this.rent = rent;
+    }
+
     public Player getOwnedBy() {
 
         return ownedBy;
