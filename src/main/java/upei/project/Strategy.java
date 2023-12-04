@@ -42,22 +42,20 @@ public class Strategy {
 
 
     public boolean isShouldPurchaseBlueLand() {
-
         return shouldPurchaseBlueLand;
     }
 
-    public void setShouldPurchaseBlueLand(boolean shouldPurchaseBlueLand) {
-        this.shouldPurchaseBlueLand = shouldPurchaseBlueLand;
-    }
+    //public void setShouldPurchaseBlueLand(boolean shouldPurchaseBlueLand) {
+       // this.shouldPurchaseBlueLand = shouldPurchaseBlueLand;
+    //}
 
     public boolean isShouldPurchaseRailway() {
-
         return shouldPurchaseRailway;
     }
 
-    public void setShouldPurchaseRailway(boolean shouldPurchaseRailway) {
-        this.shouldPurchaseRailway = shouldPurchaseRailway;
-    }
+    //public void setShouldPurchaseRailway(boolean shouldPurchaseRailway) {
+        //this.shouldPurchaseRailway = shouldPurchaseRailway;
+   // }
 
     public boolean isShouldPurchaseYellowLand() {
 
@@ -110,7 +108,6 @@ public class Strategy {
     }
 
     public boolean isShouldPurchaseOrangeLand() {
-
         return shouldPurchaseOrangeLand;
 
     }

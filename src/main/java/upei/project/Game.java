@@ -8,8 +8,8 @@ import upei.project.ChanceClass;
 
 public class Game {
     ArrayList<Player> players = new ArrayList<>();
-    public ChanceClass chanceClass;
-    public CommunityChest community;
+    public ChanceClass chanceClass = new ChanceClass();
+    public CommunityChest community = new CommunityChest();
     Player winner;
     int numberOfPlayers;
     Random random = new Random();

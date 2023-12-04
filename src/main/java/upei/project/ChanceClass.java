@@ -12,6 +12,8 @@ public class ChanceClass {
 
     // chance card options are being added to the array list
     public ChanceClass () {
+
+
         chanceCards.add(new ChanceCard("Advance to go, collect $200",1));
         chanceCards.add(new ChanceCard("Advance to mediterranean ave", 2));
         chanceCards.add(new ChanceCard("Bank pays you dividend of $50",-1,50));
