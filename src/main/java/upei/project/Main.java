@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 
 public class Main {
+    ArrayList<Player> winners = new ArrayList<>();
 
 
     public static void  main(String[] args) {
@@ -17,11 +18,17 @@ public class Main {
         Player player3 = new Player("Jay",3,1500,strategy3);
         Player player4 = new Player("Mike",4,1500,strategy1);
 
+
+
         ArrayList<Player> players = new ArrayList<>();
         players.add(player1);
         players.add(player2);
 
         Game game = new Game(players);
+        game.startGame();
+
+
+
 
 
         ArrayList<Player> players2 = new ArrayList<>();
@@ -31,6 +38,8 @@ public class Main {
 
         Game game2 = new Game(players2);
 
+        game2.startGame();
+
 
         ArrayList<Player> players3 = new ArrayList<>();
         players3.add(player1);
@@ -39,8 +48,10 @@ public class Main {
 
 
         Game game3 = new Game(players3);
+        game3.startGame();
 
     }
+
 
 
 }

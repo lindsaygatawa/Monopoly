@@ -10,6 +10,10 @@ public class Game {
     ArrayList<Player> players = new ArrayList<>();
     public ChanceClass chanceClass = new ChanceClass();
     public CommunityChest community = new CommunityChest();
+    public boolean gameOver;
+
+
+
     Player winner;
     int numberOfPlayers;
     Random random = new Random();
@@ -21,9 +25,9 @@ public class Game {
 
     }
     public Game(ArrayList<Player> p_Players) {
-            this.numberOfPlayers = p_Players.size();
 
             this.players.addAll(p_Players);
+            this.numberOfPlayers = players.size();
             Actions act = new Actions();
             act.createBoxes();
 
@@ -31,10 +35,10 @@ public class Game {
         //game starts
         public Object startGame() {
 
-            do {
+            while (!gameOver) {
 
 
-                for (int playerIndex = 0; playerIndex < players.size(); playerIndex++) {
+                for (int playerIndex = 0; playerIndex < numberOfPlayers; playerIndex++) {
                     Player player = players.get(playerIndex);
 
 
@@ -57,10 +61,10 @@ public class Game {
                                     if (canPurchase) {
                                         currentB.setOwnedBy(player);
                                     } else {
-                                        return "INSUFFICIENT FUNDS";
+                                        System.out.println("INSUFFICIENT FUNDS");
                                     }
                                 } else {
-                                    return "not your strategy";
+                                    System.out.println("Not your strategy");;
                                 }
 
                                 if (currentB.color.equals("Light blue")) {
@@ -69,10 +73,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("not your strategy");
                                     }
                                 }
 
@@ -82,10 +86,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("Not your strategy");
                                     }
                                 }
 
@@ -95,10 +99,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("Not your strategy");
                                     }
                                 }
 
@@ -108,10 +112,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("Not your strategy");
                                     }
                                 }
 
@@ -121,10 +125,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("Not your strategy");
                                     }
                                 }
 
@@ -134,10 +138,10 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("Not your strategy");
                                     }
                                 }
 
@@ -147,25 +151,25 @@ public class Game {
                                         if (canPurchase) {
                                             currentB.setOwnedBy(player);
                                         } else {
-                                            return "INSUFFICIENT FUNDS";
+                                            System.out.println("INSUFFICIENT FUNDS");
                                         }
                                     } else {
-                                        return "not your strategy";
+                                        System.out.println("not your strategy");
                                     }
                                 } else {
-                                    return "not a valid land box";
+                                    System.out.println("Not a valid box");
                                 }
                             }
                             if (owner != player) {
                                 boolean l_payRent = player.payRent(currentB.rent);
                                 if (l_payRent) {
-                                    return "rent paid";
+                                    System.out.println("Rent paid");
                                 } else {
                                     players.remove(player);
                                 }
                                 owner.acceptMoney(currentB.rent);
                             } else {
-                                return "current player owns box";
+                                System.out.println("Current player owns box");
                             }
                         }
                     }
@@ -180,22 +184,22 @@ public class Game {
                                     if (canPurchase) {
                                         currentB.setOwnedBy(player);
                                     } else {
-                                        return "INSUFFICIENT FUNDS";
+                                        System.out.println("INSUFFICIENT FUNDS");
                                     }
                                 } else {
-                                    return "not your strategy";
+                                    System.out.println("not your strategy");
                                 }
                             }
                             if (owner != player) {
                                 boolean l_payRent = player.payRent(currentB.rent);
                                 if (l_payRent) {
-                                    return "rent paid";
+                                    System.out.println("rent paid");
                                 } else {
                                     players.remove(player);
                                 }
                                 owner.acceptMoney(currentB.rent);
                             } else {
-                                return "current player owns box";
+                                System.out.println("current player owns box");
                             }
                         }
 
@@ -208,22 +212,22 @@ public class Game {
                                     if (canPurchase) {
                                         currentB.setOwnedBy(player);
                                     } else {
-                                        return "INSUFFICIENT FUNDS";
+                                        System.out.println("INSUFFICIENT FUNDS");
                                     }
                                 } else {
-                                    return "not your strategy";
+                                    System.out.println("not your strategy");
                                 }
                             }
                             if (owner != player) {
                                 boolean l_payRent = player.payRent(currentB.rent);
                                 if (l_payRent) {
-                                    return "rent paid";
+                                    System.out.println("Rent paid");
                                 } else {
                                     players.remove(player);
                                 }
                                 owner.acceptMoney(currentB.rent);
                             } else {
-                                return "current player owns box";
+                                System.out.println("current player owns box");
                             }
                         }
                     }
@@ -237,22 +241,22 @@ public class Game {
                                 if (canPurchase) {
                                     currentB.setOwnedBy(player);
                                 } else {
-                                    return "INSUFFICIENT FUNDS";
+                                    System.out.println("INSUFFICIENT FUNDS");
                                 }
                             } else {
-                                return "not your strategy";
+                                System.out.println("Not your strategy");
                             }
                         }
                         if (owner != player) {
                             boolean l_payRent = player.payRent(currentB.rent);
                             if (l_payRent) {
-                                return "rent paid";
+                                System.out.println("INSUFFICIENT FUNDS");
                             } else {
                                 players.remove(player);
                             }
                             owner.acceptMoney(currentB.rent);
                         } else {
-                            return "current player owns box";
+                            System.out.println("Currnet player owns box");
                         }
                     }
 
@@ -260,7 +264,7 @@ public class Game {
                     if (currentB.boxType.equals("Tax")) {
                         boolean l_payRent = player.payRent(currentB.rent);
                         if (l_payRent) {
-                            return "rent paid";
+                            System.out.println("rent paid");
                         } else {
                             players.remove(player);
                         }
@@ -303,25 +307,33 @@ public class Game {
                             roll.GoToJail(player, currentB);
                         }
                         if (currentB.boxId == 21) {
-                            return "Enjoy your free parking";
+                            System.out.println("Enjoy your free parking");
                         } else {
-                            return "You just passed GO";
+                            System.out.println("YOU JUST PASSED GO");
                         }
 
                     } else {
-                        return "not a box type";
+                        System.out.println("NOT A VALID BOX TYPE");
                     }
 
 
+
+
+
                 }
+
+
                 if (players.size() == 1) {
+                    gameOver = true;
                     winner = players.get(0);
-                } else {
-                    return "";
+                    break; // Exit the loop
                 }
-                return "The winner is" + winner;
             }
-            while (winner == null);
+
+            if (gameOver) {
+                return "The winner is " + winner;
+            } else {
+                return "";
 
         }
 
@@ -331,4 +343,4 @@ public class Game {
 
 
 
-}
+}}
