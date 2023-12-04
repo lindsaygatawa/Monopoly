@@ -10,6 +10,7 @@ abstract class NewBox {
     public int boxPrice;
 
 
+
     public NewBox( String boxName,int boxId, Player ownedBy,int rent,int boxPrice,String color){
         this.ownedBy = ownedBy;
         this.boxName = boxName;
@@ -17,6 +18,12 @@ abstract class NewBox {
         this.rent = rent;
         this.color = color;
         this.boxPrice = boxPrice;
+    }
+
+    public NewBox(String boxName, int boxId, Player ownedBy, int boxPrice) {
+        this.boxName = boxName;
+        this.boxPrice = boxPrice;
+        this.ownedBy = ownedBy;
     }
 
     public NewBox(String boxName, int boxId) {
