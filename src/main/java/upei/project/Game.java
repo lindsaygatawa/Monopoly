@@ -25,7 +25,7 @@ public class Game {
         }
         //game starts
         public Object startGame() {
-            for (int playerIndex = 0;  playerIndex< players.size(); playerIndex++) {
+            for (int playerIndex = 0; playerIndex < players.size(); playerIndex++) {
                 Player player = players.get(playerIndex);
 
                 Actions roll = new Actions();
@@ -35,13 +35,13 @@ public class Game {
 
                 int l_currentPosition = player.currentPosition;
                 NewBox currentB = roll.newBoxes[l_currentPosition - 1];
-                if (currentB.boxType.equals("land") ){
+                if (currentB.boxType.equals("land")) {
 
                     Player owner = currentB.getOwnedBy();
                     if (owner == null) {
                         player.makePurchase(currentB.boxPrice);
 
-                        if (currentB.color.equals("light blue")) {
+                        if (currentB.color.equals("Dark Blue")) {
                             if (player.strategy.shouldPurchaseBlueLand) {
                                 boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                 if (canPurchase) {
@@ -53,7 +53,7 @@ public class Game {
                                 return "not your strategy";
                             }
 
-                            if (currentB.color.equals("dark blue")) {
+                            if (currentB.color.equals("Light blue")) {
                                 if (player.strategy.shouldPurchaseLightBlueLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -66,7 +66,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("pink")) {
+                            if (currentB.color.equals("Brown")) {
                                 if (player.strategy.shouldPurchaseBrownLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -79,7 +79,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("brown")) {
+                            if (currentB.color.equals("Pink")) {
                                 if (player.strategy.shouldPurchasePinkLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -92,7 +92,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("Red")) {
+                            if (currentB.color.equals("Green")) {
                                 if (player.strategy.shouldPurchaseGreenLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -105,7 +105,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("Yellow")) {
+                            if (currentB.color.equals("Orange")) {
                                 if (player.strategy.shouldPurchaseOrangeLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -118,7 +118,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("Orange")) {
+                            if (currentB.color.equals("Red")) {
                                 if (player.strategy.shouldPurchaseRedLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -131,7 +131,7 @@ public class Game {
                                 }
                             }
 
-                            if (currentB.color.equals("brown")) {
+                            if (currentB.color.equals("Yellow")) {
                                 if (player.strategy.shouldPurchaseYellowLand) {
                                     boolean canPurchase = player.makePurchase(currentB.boxPrice);
                                     if (canPurchase) {
@@ -157,35 +157,18 @@ public class Game {
 
 
                 }
-                if (currentB.boxType.equals("Community chest box")){
+                if (currentB.boxType.equals("Community chest box")) {
+
 
                 }
-                if (currentB.boxType.equals("Chance")){
+                if (currentB.boxType.equals("Chance")) {
 
                 }
-                if (currentB.boxType.equals("Utility")){
+                if (currentB.boxType.equals("Utility")) {
 
                 }
-                if (currentB.boxType.equals("No actions")){
+                if (currentB.boxType.equals("No actions")) {
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             }
@@ -199,4 +182,4 @@ public class Game {
 
 
 
-}}
+}
