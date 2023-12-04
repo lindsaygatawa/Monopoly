@@ -58,8 +58,7 @@ public class Player extends Game {
             currentMoney -= rent;
             return true;
         } else {
-            if (currentMoney < rent) {
-                players.remove(currentPlayer);
+            return false;
 
             }
         }
