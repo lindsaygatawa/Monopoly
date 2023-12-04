@@ -84,7 +84,7 @@ public class Actions {
 
     }
 
-    // updates player position and gives player $200 if they pass GO
+    // updates player position and gives player $200 if they land on Go or if they pass GO
     public int  moveForward(Player player){
         int steps = player.currentPosition + total;
         if(steps >= 40) {
