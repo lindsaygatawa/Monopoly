@@ -12,6 +12,6 @@ outlined by my instructor and consistent with the Academic Regulation 20.
 
 Signatures:
 
-Student name (Student number)
+Lindsay Gatawa(0347050)
 
-Student name (Student number)
+Faloseyi Oluwatomilayo (0352818)
