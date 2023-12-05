@@ -15,7 +15,7 @@ public class LandBox extends NewBox {
 
     public LandBox(String boxName, int boxId,Player ownedBy,int rent,  int l_boxPrice, String l_color) {
         super(boxName, boxId, ownedBy, rent,l_boxPrice, l_color);
-        super.boxType = "land";
+        boxType = "land";
 
     }
 

@@ -12,6 +12,7 @@ public class Actions {
 
     public Actions () {
         newBoxes = new NewBox[40];
+        createBoxes();
 
     }
 
@@ -32,7 +33,7 @@ public class Actions {
         newBoxes[7] = new ChanceBox("Chance",8);
         newBoxes[8] = new LandBox("Vermont Avenue",9,null,100,130,"Light Blue");
         newBoxes[9] = new LandBox("Connecticut Avenue",10,null,120,250, "Light Blue");
-        newBoxes[10] = new NoActions("Jail / Just Visiting",11);
+        newBoxes[10] = new NoActions("Jail",11);
         newBoxes[11] = new LandBox("St. Charles Place",12,null,140,140,"Pink");
         newBoxes[12] = new Utility("Electric company",13,null,150,140);
         newBoxes[13] = new LandBox("States ave",14,null,140,140,"Pink");

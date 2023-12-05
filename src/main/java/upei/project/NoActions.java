@@ -14,13 +14,13 @@ public class NoActions extends NewBox {
 
     public NoActions(String boxNamee, int boxID){
         super(boxNamee,boxID);
-        super.boxType = "No actions";
+        boxType = "No actions";
 
 
     }
 
     public NoActions(String boxName, int boxId, int rent) {
         super(boxName, boxId, rent);
-        super.boxType = "Tax";
+        boxType = "Tax";
     }
 }

@@ -16,7 +16,7 @@ public class Utility extends NewBox{
 
     public Utility(String boxName, int boxId,Player ownedBy, int l_boxPrice, int l_rent) {
         super(boxName, boxId, ownedBy,l_boxPrice);
-        super.boxType = "Utility";
+        boxType = "Utility";
         Rent = l_rent;
 
 

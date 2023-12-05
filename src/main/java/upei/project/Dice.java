@@ -8,7 +8,7 @@ public class Dice implements DiceAPI {
 
     //method that stimulates dice roll
     public void roll () {
-        for (int i=0; i<NUM_DICE; i++) {
+        for (int i=1; i<NUM_DICE; i++) {
             dice[i] = 1 + (int)(Math.random() * 6);
         }
         return;
